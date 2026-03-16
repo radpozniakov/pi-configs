@@ -10,10 +10,10 @@
  *   3. Current session model (fallback)
  *
  * Commands:
- *   Ctrl+Shift+F          — Fix grammar in editor text in-place
- *   /fix <text>            — Correct text and send directly to main agent
- *   /grammar-model         — Show current model + open picker
- *   /grammar-model <p/id>  — Set grammar model directly (e.g. anthropic/claude-haiku-4-5)
+ *   Ctrl+Shift+F           — Fix grammar in editor text in-place
+ *   /grammar <text>         — Correct text and send directly to main agent
+ *   /grammar-model          — Show current model + open picker
+ *   /grammar-model <p/id>   — Set grammar model directly (e.g. anthropic/claude-haiku-4-5)
  */
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -188,13 +188,13 @@ export default function (pi: ExtensionAPI) {
 		},
 	});
 
-	// ── /fix command: correct and send directly ──────────────────────
-	pi.registerCommand("fix", {
+	// ── /grammar command: correct and send directly ─────────────────
+	pi.registerCommand("grammar", {
 		description: "Grammar-correct text and send it to the main agent",
 		handler: async (args, ctx) => {
 			const text = args.trim();
 			if (!text) {
-				ctx.ui.notify("Usage: /fix <your messy text>", "warning");
+				ctx.ui.notify("Usage: /grammar <your messy text>", "warning");
 				return;
 			}
 

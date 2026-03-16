@@ -11,7 +11,7 @@ The extension sends the editor text to an LLM with a focused grammar-correction 
 | Trigger | What it does |
 |---------|-------------|
 | `Ctrl+Shift+F` | Correct grammar in the current editor text in-place. Review the result, then press Enter to send. |
-| `/fix <text>` | Correct the given text and send it straight to the main agent. |
+| `/grammar <text>` | Correct the given text and send it straight to the main agent. |
 | `/grammar-model` | Show the current grammar model and open an interactive picker. |
 | `/grammar-model <provider/id>` | Set the grammar model directly (e.g. `anthropic/claude-haiku-4-5`). |
 | `/grammar-model reset` | Clear the saved model — fall back to the current session model. |
