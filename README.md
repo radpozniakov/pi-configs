@@ -1,6 +1,6 @@
 # Pi Configs
 
-A collection of custom extensions for the [Pi coding agent](https://github.com/nicepkg/pi).
+A collection of custom extensions for the [Pi coding agent](https://github.com/badlogic/pi-mono). 
 
 ## Extensions
 
