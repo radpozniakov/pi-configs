@@ -6,7 +6,7 @@ A collection of custom extensions for the [Pi coding agent](https://github.com/b
 
 | Extension | Description | Docs |
 |-----------|-------------|------|
-| [grammar-fix](extensions/grammar-fix.ts) | Fix grammar in the editor with `Ctrl+Shift+F` or the `/fix` command | [grammar-fix.md](docs/extensions/grammar-fix.md) |
+| [grammar-fix](extensions/grammar-fix.ts) | Fix grammar in the editor with `Ctrl+Shift+F` or the `/grammar` command | [grammar-fix.md](docs/extensions/grammar-fix.md) |
 
 ## Installation
 
